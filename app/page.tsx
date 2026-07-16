@@ -2,7 +2,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
 import TechStack from "@/components/TechStack";
-
+import Process from "@/components/Process";
 export default function Home() {
   return (
     <main className="bg-[#09090B] text-white">
@@ -10,6 +10,7 @@ export default function Home() {
       <Hero />
       <Services />
       <TechStack />
+      <Process />
     </main>
   );
 }

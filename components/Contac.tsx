@@ -19,10 +19,9 @@ export default function Contac() {
           </h2>
 
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-zinc-400">
-            Whether it&apos;s a legacy system rewrite, a mobile app, or a web
-            platform from scratch, we&apos;re ready to talk about your
-            project and give you a real estimate based on your code and
-            objectives.
+            From legacy system modernization to custom web and mobile applications, 
+            we help businesses turn ideas into reliable software. Get a tailored 
+            estimate based on your technical requirements, existing systems, and project goals.
           </p>
 
           <div className="mt-10 flex justify-center">

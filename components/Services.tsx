@@ -100,17 +100,17 @@ export default function Services() {
           </span>
 
           <h2 className="mt-6 text-4xl font-black md:text-5xl">
-            Everything you need
+            Everything You Need 
             <span className="bg-gradient-to-r from-violet-400 to-cyan-400 bg-clip-text text-transparent">
               {" "}
-              to build or modernize software
+              to Build, Modernize, and Scale Software
             </span>
           </h2>
 
           <p className="mt-6 text-lg leading-8 text-zinc-400">
-            From full stack web apps to legacy system modernization, we
-            provide end-to-end software development services tailored to
-            your business.
+            From full-stack web applications to legacy system 
+            modernization, we provide end-to-end software 
+            development services tailored to your business needs.
           </p>
 
         </div>

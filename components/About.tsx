@@ -48,15 +48,23 @@ export default function About() {
             </span>
           </h2>
 
-          <p className="mt-6 text-lg leading-8 text-zinc-400">
-            CodeFixers is a full stack software development team specialized
-            in building, rewriting and modernizing web and desktop
-            applications in any language, framework or platform. We work
-            with clients ranging from startups launching a brand-new product
-            to established businesses migrating legacy systems — including
-            VB6, Delphi and other desktop technologies — to modern, scalable
-            web architectures.
+        <div className="mt-6 text-lg leading-8 text-zinc-400">
+          <p>
+            CodeFixers is a full-stack software development team
+            specializing in building, rewriting, and modernizing
+            web and desktop applications. We work across a wide
+            range of programming languages, frameworks, and
+            platforms, helping clients deliver reliable,
+            scalable software solutions.
           </p>
+          <p className="mt-6">
+            From startups launching new products to established
+            businesses modernizing legacy systems—including VB6,
+            Delphi, WinForms, and other desktop technologies—we
+            help organizations migrate to modern, scalable
+            architectures while preserving business continuity.
+          </p>
+        </div>
 
         </div>
 

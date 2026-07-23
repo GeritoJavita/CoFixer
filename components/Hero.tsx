@@ -27,15 +27,17 @@ export default function Hero() {
             Full Stack Experts
             <span className="bg-gradient-to-r from-violet-400 to-cyan-400 bg-clip-text text-transparent">
               {" "}
-              Fluent in Any Language, Stack, or Legacy System
+              Across Modern and Legacy Technologies
             </span>
           </h1>
 
           <p className="mt-8 max-w-xl text-lg leading-8 text-zinc-400">
-            We design, build, rewrite and modernize web and desktop
-            applications — from brand-new products to legacy systems like
-            VB6, Delphi and WinForms — with a senior-led team that reviews
-            100% of the code we ship.
+            We design, build, modernize, and refactor web and desktop 
+            applications—from brand-new products to legacy systems such 
+            as VB6, Delphi, and WinForms. Every project is delivered by 
+            a senior-led team, with 100% of the code reviewed to ensure 
+            quality, maintainability, and reliability.
+
           </p>
 
           <div className="mt-10 flex flex-wrap gap-4">

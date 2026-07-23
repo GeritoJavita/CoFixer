@@ -57,6 +57,7 @@ const categories = [
       "GraphQL",
       "Microservices",
       "OAuth / JWT",
+      "SpringBoot",
     ],
   },
   {
@@ -114,17 +115,18 @@ export default function TechStack() {
           </span>
 
           <h2 className="mt-6 text-4xl font-black md:text-5xl">
-            Built with
+            Powered by 
             <span className="bg-gradient-to-r from-cyan-400 to-violet-400 bg-clip-text text-transparent">
               {" "}
-              modern technologies
+              Modern Technologies
             </span>
           </h2>
 
           <p className="mt-6 text-lg leading-8 text-zinc-400">
-            We choose reliable technologies that allow us to
-            build secure, scalable, high-performance software — and to
-            speak the language of the legacy systems we modernize.
+            We use proven technologies to build secure, 
+            scalable, and high-performance software while 
+            maintaining the expertise needed to modernize 
+            legacy systems.
           </p>
 
         </div>

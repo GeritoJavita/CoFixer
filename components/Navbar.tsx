@@ -48,10 +48,10 @@ export default function Navbar() {
 
         <Link href="/" className="flex items-center gap-2">
           <Image
-            src="/Logo.png"
+            src="/shield.png"
             alt="CodeFixers logo"
-            width={44}
-            height={44}
+            width={55}
+            height={55}
             className="h-11 w-11 rounded-xl object-contain"
             priority
           />
@@ -105,7 +105,7 @@ export default function Navbar() {
             </SheetTrigger>
 
             <SheetContent side="right" className="bg-zinc-950">
-              <div className="mt-12 flex flex-col gap-6">
+              <div className="mt-12 flex flex-col items-center gap-6">
                 {navLinks.map((item) => (
                   <Link
                     key={item.title}
@@ -116,7 +116,7 @@ export default function Navbar() {
                   </Link>
                 ))}
 
-                <Button asChild className="mt-4 bg-violet-600">
+                <Button asChild className="mt-4 w-full bg-violet-600">
                   <a href={UPWORK_URL} target="_blank" rel="noopener noreferrer">
                     Hire Us
                   </a>

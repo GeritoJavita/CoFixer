@@ -11,35 +11,35 @@ const steps = [
     number: "01",
     title: "Discovery & Audit",
     description:
-      "We review the current system, database and existing business logic before writing a single line of new code.",
+      "We thoroughly assess your existing system, database, and business logic before writing a single line of new code.",
     icon: Search,
   },
   {
     number: "02",
-    title: "Architecture & Technical Plan",
+    title: "Architecture & Technical Planning",
     description:
-      "We define the stack, architecture and data migration plan aligned with your business goals.",
+      "We define the technology stack, system architecture, and data migration strategy, ensuring every technical decision aligns with your business goals.",
     icon: PenTool,
   },
   {
     number: "03",
     title: "Iterative Development",
     description:
-      "We build module by module, with verifiable deliveries and constant reviews with you.",
+      "We build your solution increment by increment, delivering working software with regular reviews and continuous feedback throughout the development process.",
     icon: Code2,
   },
   {
     number: "04",
     title: "Parity Testing & QA",
     description:
-      "We compare the new system's behavior against the original to prevent regressions.",
+      "We validate the new system against the original to ensure feature parity, prevent regressions, and maintain a seamless user experience.",
     icon: ClipboardCheck,
   },
   {
     number: "05",
     title: "Launch & Handover",
     description:
-      "Deployment, documentation and knowledge transfer for your team.",
+      "We deploy your solution, provide comprehensive documentation, and transfer the knowledge your team needs to confidently operate and maintain the system.",
     icon: Rocket,
   },
 ];
@@ -61,16 +61,16 @@ export default function Process() {
           </span>
 
           <h2 className="mt-6 text-4xl font-black md:text-5xl">
-            From audit to
+            From Audit to
             <span className="bg-gradient-to-r from-violet-400 to-cyan-400 bg-clip-text text-transparent">
               {" "}
-              successful launch
+              Successful Launch
             </span>
           </h2>
 
           <p className="mt-6 text-lg leading-8 text-zinc-400">
-            A transparent, five-step workflow that keeps you informed
-            throughout every stage of the project.
+            A transparent five-step process that keeps you informed 
+            and involved throughout every stage of the project.
           </p>
 
         </div>

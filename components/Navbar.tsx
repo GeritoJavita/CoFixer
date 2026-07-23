@@ -48,10 +48,10 @@ export default function Navbar() {
 
         <Link href="/" className="flex items-center gap-2">
           <Image
-            src="/Logo.png"
+            src="/shield.png"
             alt="CodeFixers logo"
-            width={44}
-            height={44}
+            width={55}
+            height={55}
             className="h-11 w-11 rounded-xl object-contain"
             priority
           />

@@ -24,37 +24,40 @@ export default function Hero() {
           </div>
 
           <h1 className="max-w-3xl text-5xl font-black leading-tight tracking-tight md:text-7xl">
-            Building
+            Full Stack Experts
             <span className="bg-gradient-to-r from-violet-400 to-cyan-400 bg-clip-text text-transparent">
               {" "}
-              software
+              Fluent in Any Language, Stack, or Legacy System
             </span>
-            <br />
-            that drives your business.
           </h1>
 
           <p className="mt-8 max-w-xl text-lg leading-8 text-zinc-400">
-            We help startups and companies design, build and scale
-            high-quality web applications with modern technologies.
+            We design, build, rewrite and modernize web and desktop
+            applications — from brand-new products to legacy systems like
+            VB6, Delphi and WinForms — with a senior-led team that reviews
+            100% of the code we ship.
           </p>
 
           <div className="mt-10 flex flex-wrap gap-4">
 
             <Button
+              asChild
               size="lg"
               className="rounded-xl bg-violet-600 hover:bg-violet-500"
             >
-              Start Your Project
+              <a href="#contact">Start Your Project</a>
             </Button>
 
             <Button
+              asChild
               size="lg"
               variant="outline"
               className="rounded-xl border-zinc-700 bg-transparent"
             >
-              View Portfolio
-
-              <ArrowRight className="ml-2 h-4 w-4" />
+              <a href="#process">
+                See How We Work
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </a>
             </Button>
 
           </div>
@@ -62,23 +65,23 @@ export default function Hero() {
           <div className="mt-12 flex gap-10">
 
             <div>
-              <h3 className="text-3xl font-bold">50+</h3>
+              <h3 className="text-3xl font-bold">3</h3>
               <p className="text-zinc-500">
-                Projects Delivered
+                Developers, Senior-Led
               </p>
             </div>
 
             <div>
-              <h3 className="text-3xl font-bold">15+</h3>
+              <h3 className="text-3xl font-bold">Any</h3>
               <p className="text-zinc-500">
-                Technologies
+                Language or Stack
               </p>
             </div>
 
             <div>
               <h3 className="text-3xl font-bold">100%</h3>
               <p className="text-zinc-500">
-                Client Satisfaction
+                Code Reviewed by a Senior
               </p>
             </div>
 
@@ -104,14 +107,14 @@ export default function Hero() {
 
             <pre className="overflow-hidden text-sm leading-7 text-zinc-300">
 {`const project = {
-  frontend: "Next.js",
-  backend: "Laravel",
-  mobile: "Flutter",
-  cloud: "AWS",
-  database: "PostgreSQL"
+  frontend: "React / Vue / Angular",
+  backend: ".NET / Node / Python / Java",
+  legacy: "VB6, Delphi, WinForms -> Web",
+  mobile: "React Native / Flutter",
+  cloud: "AWS / Azure / GCP"
 }
 
-deploy(project)
+migrate(project)
 `}
             </pre>
 
@@ -122,11 +125,11 @@ deploy(project)
           <div className="absolute -left-12 top-10 rounded-2xl border border-white/10 bg-zinc-900/80 p-5 backdrop-blur-xl">
 
             <h4 className="font-semibold">
-              Tech Stack
+              Any Stack
             </h4>
 
             <p className="mt-2 text-sm text-zinc-400">
-              Next.js • React • Laravel
+              Modern & legacy, web & desktop
             </p>
 
           </div>

@@ -12,12 +12,14 @@ import {
 } from "@/components/ui/sheet";
 
 const navLinks = [
+  { title: "About", href: "#about" },
   { title: "Services", href: "#services" },
   { title: "Tech Stack", href: "#tech" },
-  { title: "Portfolio", href: "#portfolio" },
   { title: "Process", href: "#process" },
   { title: "Contact", href: "#contact" },
 ];
+
+const UPWORK_URL = "https://www.upwork.com/agencies/codefioxer";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -50,7 +52,7 @@ export default function Navbar() {
 
           <div>
             <h1 className="text-lg font-bold tracking-tight text-white">
-              CodeFixer
+              Codefioxer
             </h1>
 
             <p className="text-xs text-zinc-400">
@@ -77,9 +79,12 @@ export default function Navbar() {
 
         <div className="hidden items-center gap-4 lg:flex">
           <Button
+            asChild
             className="rounded-xl bg-violet-600 px-6 hover:bg-violet-500"
           >
-            Hire Us
+            <a href={UPWORK_URL} target="_blank" rel="noopener noreferrer">
+              Hire Us
+            </a>
           </Button>
         </div>
 
@@ -105,8 +110,10 @@ export default function Navbar() {
                   </Link>
                 ))}
 
-                <Button className="mt-4 bg-violet-600">
-                  Hire Us
+                <Button asChild className="mt-4 bg-violet-600">
+                  <a href={UPWORK_URL} target="_blank" rel="noopener noreferrer">
+                    Hire Us
+                  </a>
                 </Button>
               </div>
             </SheetContent>

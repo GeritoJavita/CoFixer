@@ -1,49 +1,39 @@
 import {
+  Terminal,
   Code2,
-  Database,
-  Cloud,
   Smartphone,
-  Shield,
-  Wrench,
+  Server,
+  Database,
+  RefreshCw,
+  Cloud,
 } from "lucide-react";
 
 const categories = [
+  {
+    title: "Languages",
+    icon: Terminal,
+    color: "from-amber-500 to-yellow-500",
+    tech: [
+      "JavaScript / TypeScript",
+      "C# / .NET",
+      "Visual Basic 6 (VB6)",
+      "Python",
+      "Java",
+      "SQL",
+      "HTML5 / CSS3",
+    ],
+  },
   {
     title: "Frontend",
     icon: Code2,
     color: "from-violet-500 to-fuchsia-500",
     tech: [
-      "React",
+      "React.js",
       "Next.js",
-      "TypeScript",
+      "Angular",
+      "Vue.js",
+      "Redux",
       "Tailwind CSS",
-      "JavaScript",
-      "Bootstrap",
-    ],
-  },
-  {
-    title: "Backend",
-    icon: Database,
-    color: "from-cyan-500 to-blue-500",
-    tech: [
-      "Laravel",
-      "Spring Boot",
-      "Node.js",
-      "PHP",
-      "Java",
-      ".NET",
-    ],
-  },
-  {
-    title: "Databases",
-    icon: Database,
-    color: "from-emerald-500 to-green-500",
-    tech: [
-      "MySQL",
-      "PostgreSQL",
-      "SQL Server",
-      "MongoDB",
-      "Firebase",
     ],
   },
   {
@@ -51,34 +41,58 @@ const categories = [
     icon: Smartphone,
     color: "from-orange-500 to-red-500",
     tech: [
+      "React Native",
       "Flutter",
-      "Android",
-      "Responsive Design",
+      ".NET MAUI",
     ],
   },
   {
-    title: "Cloud & DevOps",
+    title: "Backend",
+    icon: Server,
+    color: "from-cyan-500 to-blue-500",
+    tech: [
+      ".NET Core / ASP.NET",
+      "Node.js / Express",
+      "RESTful APIs",
+      "GraphQL",
+      "Microservices",
+      "OAuth / JWT",
+    ],
+  },
+  {
+    title: "Databases",
+    icon: Database,
+    color: "from-emerald-500 to-green-500",
+    tech: [
+      "SQL Server",
+      "MySQL / PostgreSQL",
+      "MongoDB",
+      "Supabase",
+      "Data Migration / ETL",
+    ],
+  },
+  {
+    title: "Legacy & Modernization",
+    icon: RefreshCw,
+    color: "from-pink-500 to-violet-500",
+    tech: [
+      "VB6 to Web Migration",
+      "WinForms / Delphi",
+      "Business Logic Translation",
+      "COM / Legacy Interop",
+    ],
+  },
+  {
+    title: "DevOps & Cloud",
     icon: Cloud,
     color: "from-sky-500 to-indigo-500",
     tech: [
-      "Docker",
       "AWS",
-      "GitHub Actions",
-      "Linux",
+      "Microsoft Azure",
       "Vercel",
-    ],
-  },
-  {
-    title: "Tools",
-    icon: Wrench,
-    color: "from-pink-500 to-violet-500",
-    tech: [
-      "Git",
-      "GitHub",
-      "Postman",
-      "Figma",
-      "VS Code",
-      "Jira",
+      "Docker",
+      "CI/CD",
+      "Git / GitHub",
     ],
   },
 ];
@@ -109,7 +123,8 @@ export default function TechStack() {
 
           <p className="mt-6 text-lg leading-8 text-zinc-400">
             We choose reliable technologies that allow us to
-            build secure, scalable and high-performance software.
+            build secure, scalable, high-performance software — and to
+            speak the language of the legacy systems we modernize.
           </p>
 
         </div>
@@ -192,7 +207,7 @@ export default function TechStack() {
 
             <div className="text-center">
               <h3 className="text-5xl font-black text-violet-400">
-                15+
+                35+
               </h3>
 
               <p className="mt-3 text-zinc-400">
@@ -206,7 +221,7 @@ export default function TechStack() {
               </h3>
 
               <p className="mt-3 text-zinc-400">
-                Modern Development Stack
+                Modern & Legacy Stack Coverage
               </p>
             </div>
 

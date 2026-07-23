@@ -2,36 +2,44 @@ import {
   Search,
   PenTool,
   Code2,
+  ClipboardCheck,
   Rocket,
 } from "lucide-react";
 
 const steps = [
   {
     number: "01",
-    title: "Discovery",
+    title: "Discovery & Audit",
     description:
-      "We understand your business, goals and project requirements to define the best technical solution.",
+      "We review the current system, database and existing business logic before writing a single line of new code.",
     icon: Search,
   },
   {
     number: "02",
-    title: "Planning & Design",
+    title: "Architecture & Technical Plan",
     description:
-      "We design the architecture, user experience and project roadmap before development begins.",
+      "We define the stack, architecture and data migration plan aligned with your business goals.",
     icon: PenTool,
   },
   {
     number: "03",
-    title: "Development",
+    title: "Iterative Development",
     description:
-      "Our team builds scalable, secure and maintainable software using modern technologies.",
+      "We build module by module, with verifiable deliveries and constant reviews with you.",
     icon: Code2,
   },
   {
     number: "04",
-    title: "Launch & Support",
+    title: "Parity Testing & QA",
     description:
-      "We deploy your application, monitor its performance and provide continuous support.",
+      "We compare the new system's behavior against the original to prevent regressions.",
+    icon: ClipboardCheck,
+  },
+  {
+    number: "05",
+    title: "Launch & Handover",
+    description:
+      "Deployment, documentation and knowledge transfer for your team.",
     icon: Rocket,
   },
 ];
@@ -53,7 +61,7 @@ export default function Process() {
           </span>
 
           <h2 className="mt-6 text-4xl font-black md:text-5xl">
-            From idea to
+            From audit to
             <span className="bg-gradient-to-r from-violet-400 to-cyan-400 bg-clip-text text-transparent">
               {" "}
               successful launch
@@ -61,8 +69,8 @@ export default function Process() {
           </h2>
 
           <p className="mt-6 text-lg leading-8 text-zinc-400">
-            A transparent workflow that keeps you informed throughout every stage
-            of the project.
+            A transparent, five-step workflow that keeps you informed
+            throughout every stage of the project.
           </p>
 
         </div>

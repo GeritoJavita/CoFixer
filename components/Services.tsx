@@ -1,54 +1,85 @@
 import {
   Code2,
+  RefreshCw,
   Smartphone,
-  Database,
-  Cloud,
-  ShieldCheck,
   Palette,
+  Server,
+  Wrench,
 } from "lucide-react";
 
 const services = [
   {
-    title: "Web Development",
+    title: "Full Stack Web Development",
     description:
-      "High-performance web applications built with modern frameworks.",
+      "Custom web applications built end-to-end, from database to UI.",
     icon: Code2,
-    technologies: ["Next.js", "React", "Laravel", "Spring Boot"],
+    items: [
+      "Custom web applications (frontend + backend)",
+      "API design & development (REST, GraphQL)",
+      "Database design & optimization",
+      "Third-party integrations (payments, CRMs, APIs)",
+      "Progressive Web Apps (PWAs)",
+    ],
+  },
+  {
+    title: "Legacy Systems Modernization",
+    description:
+      "Rewriting and preserving the business logic of desktop systems.",
+    icon: RefreshCw,
+    items: [
+      "Desktop-to-web application rewrites (VB6, Delphi, WinForms)",
+      "Business logic migration & preservation",
+      "Schema migration & data conversion",
+      "Legacy vs. new system parity testing",
+    ],
   },
   {
     title: "Mobile Development",
     description:
-      "Cross-platform mobile applications for Android and iOS.",
+      "Cross-platform mobile apps and native rewrites of web products.",
     icon: Smartphone,
-    technologies: ["Flutter", "Android", "Responsive Apps"],
+    items: [
+      "React Native & Flutter (cross-platform)",
+      ".NET MAUI for Microsoft stacks",
+      "Web-to-native app redesign",
+      "App Store & Google Play publishing",
+    ],
   },
   {
-    title: "Backend & APIs",
+    title: "Frontend Development",
     description:
-      "Secure and scalable REST APIs connected to robust databases.",
-    icon: Database,
-    technologies: ["Node.js", "Laravel", "PostgreSQL", "MySQL"],
-  },
-  {
-    title: "Cloud & DevOps",
-    description:
-      "Deployment automation, containers and cloud infrastructure.",
-    icon: Cloud,
-    technologies: ["Docker", "AWS", "GitHub Actions", "Linux"],
-  },
-  {
-    title: "UI / UX Design",
-    description:
-      "Modern interfaces focused on user experience and conversion.",
+      "Responsive interfaces implemented with modern frameworks.",
     icon: Palette,
-    technologies: ["Figma", "Tailwind", "Dashboard", "Landing Pages"],
+    items: [
+      "React, Angular, Vue.js",
+      "Responsive UI/UX implementation",
+      "Dashboards & admin panels",
+      "Cross-browser performance optimization",
+    ],
   },
   {
-    title: "Cybersecurity",
+    title: "Backend & Infrastructure",
     description:
-      "Security best practices integrated into every stage of development.",
-    icon: ShieldCheck,
-    technologies: ["OWASP", "Authentication", "Pentesting", "Audits"],
+      "Scalable APIs and cloud infrastructure built for growth.",
+    icon: Server,
+    items: [
+      ".NET, Node.js, Python, Java",
+      "Cloud deployment (AWS, Azure, GCP)",
+      "Microservices architecture",
+      "CI/CD pipeline setup",
+    ],
+  },
+  {
+    title: "Maintenance & QA",
+    description:
+      "Ongoing support and quality assurance for existing systems.",
+    icon: Wrench,
+    items: [
+      "Bug fixing & ongoing support",
+      "Code audits & technical debt reviews",
+      "Manual & automated testing",
+      "Documentation & knowledge transfer",
+    ],
   },
 ];
 
@@ -72,13 +103,14 @@ export default function Services() {
             Everything you need
             <span className="bg-gradient-to-r from-violet-400 to-cyan-400 bg-clip-text text-transparent">
               {" "}
-              to build modern software
+              to build or modernize software
             </span>
           </h2>
 
           <p className="mt-6 text-lg leading-8 text-zinc-400">
-            From MVPs to enterprise platforms, we provide end-to-end
-            software development services tailored to your business.
+            From full stack web apps to legacy system modernization, we
+            provide end-to-end software development services tailored to
+            your business.
           </p>
 
         </div>
@@ -129,27 +161,19 @@ export default function Services() {
                     {service.description}
                   </p>
 
-                  <div className="mt-8 flex flex-wrap gap-2">
+                  <ul className="mt-6 space-y-2.5">
 
-                    {service.technologies.map((tech) => (
-                      <span
-                        key={tech}
-                        className="
-                          rounded-full
-                          border
-                          border-white/10
-                          bg-zinc-900
-                          px-3
-                          py-1
-                          text-xs
-                          text-zinc-300
-                        "
+                    {service.items.map((item) => (
+                      <li
+                        key={item}
+                        className="flex items-start gap-2.5 text-sm leading-6 text-zinc-300"
                       >
-                        {tech}
-                      </span>
+                        <span className="mt-1.5 h-1.5 w-1.5 flex-none rounded-full bg-violet-400" />
+                        {item}
+                      </li>
                     ))}
 
-                  </div>
+                  </ul>
 
                 </div>
               </div>

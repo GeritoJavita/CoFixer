@@ -21,12 +21,6 @@ const team = [
   },
 ];
 
-const stats = [
-  { value: "3", label: "Developers on the Team" },
-  { value: "Any", label: "Language or Stack" },
-  { value: "100%", label: "Code Reviewed by a Senior" },
-];
-
 export default function About() {
   return (
     <section id="about" className="relative py-32">
@@ -65,21 +59,6 @@ export default function About() {
             architectures while preserving business continuity.
           </p>
         </div>
-
-        </div>
-
-        {/* Stats */}
-
-        <div className="mx-auto mb-16 grid max-w-3xl gap-8 rounded-3xl border border-white/10 bg-white/5 p-10 backdrop-blur-xl sm:grid-cols-3">
-
-          {stats.map((stat) => (
-            <div key={stat.label} className="text-center">
-              <h3 className="text-4xl font-black text-violet-400">
-                {stat.value}
-              </h3>
-              <p className="mt-2 text-sm text-zinc-400">{stat.label}</p>
-            </div>
-          ))}
 
         </div>
 

@@ -49,7 +49,7 @@ export default function About() {
           </h2>
 
           <p className="mt-6 text-lg leading-8 text-zinc-400">
-            Codefioxer is a full stack software development team specialized
+            CodeFixers is a full stack software development team specialized
             in building, rewriting and modernizing web and desktop
             applications in any language, framework or platform. We work
             with clients ranging from startups launching a brand-new product

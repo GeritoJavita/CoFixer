@@ -16,9 +16,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Codefioxer",
+  title: "Codefixer",
   description:
-    "Codefioxer — Full Stack Experts Fluent in Any Language, Stack, or Legacy System.",
+    "Codefixer — Full Stack Experts Fluent in Any Language, Stack, or Legacy System.",
 };
 
 export default function RootLayout({

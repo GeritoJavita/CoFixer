@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Menu } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
@@ -19,7 +20,7 @@ const navLinks = [
   { title: "Contact", href: "#contact" },
 ];
 
-const UPWORK_URL = "https://www.upwork.com/agencies/codefioxer";
+const UPWORK_URL = "https://www.upwork.com/agencies/2076468430495689955/";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -46,13 +47,18 @@ export default function Navbar() {
         {/* Logo */}
 
         <Link href="/" className="flex items-center gap-2">
-          <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-violet-600 to-indigo-500 font-bold text-white shadow-lg shadow-violet-500/30">
-            
-          </div>
+          <Image
+            src="/Logo.png"
+            alt="CodeFixers logo"
+            width={44}
+            height={44}
+            className="h-11 w-11 rounded-xl object-contain"
+            priority
+          />
 
           <div>
             <h1 className="text-lg font-bold tracking-tight text-white">
-              Codefioxer
+              CodeFixers
             </h1>
 
             <p className="text-xs text-zinc-400">

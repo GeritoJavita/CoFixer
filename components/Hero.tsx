@@ -93,7 +93,7 @@ export default function Hero() {
 
         {/* RIGHT */}
 
-        <div className="relative mt-20 lg:mt-0">
+        <div className="relative mx-auto mt-20 origin-top scale-[0.82] sm:scale-90 md:scale-95 lg:mt-0 lg:scale-100 lg:origin-center">
 
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-xl shadow-2xl">
 

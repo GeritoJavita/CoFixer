@@ -67,7 +67,7 @@ export default function Hero() {
             <div>
               <h3 className="text-3xl font-bold">3</h3>
               <p className="text-zinc-500">
-                Developers, Senior-Led
+                Developers, Senior-Lead
               </p>
             </div>
 
